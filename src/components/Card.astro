@@ -1,0 +1,25 @@
+---
+const { headline, text } = Astro.props;
+---
+
+<article>
+  <div></div>
+  <h3>{headline}</h3>
+  <p>{text}</p>
+</article>
+
+<style>
+  article {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  div {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 1rem;
+    background-color: #ddd;
+  }
+</style>
